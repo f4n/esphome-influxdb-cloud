@@ -45,4 +45,4 @@ async def to_code(config):
     if CORE.is_esp8266:
         cg.add_library('ESP8266HTTPClient', None)
     
-    cg.add_library('tobiasschuerg/ESP8266 Influxdb', '3.13.1')
+    cg.add_library('tobiasschuerg/ESP8266 Influxdb', '3.13.2')
