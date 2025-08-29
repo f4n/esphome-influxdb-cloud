@@ -40,7 +40,7 @@ async def to_code(config):
     cg.add(var.set_measurement(config[CONF_INFLUXDB_MEASUREMENT]))
     
     if CORE.is_esp32:
-        cg.add_library('WiFiClientSecure', None)
+        cg.add_library('NetworkClientSecure', None)
         cg.add_library('HTTPClient', None)
     if CORE.is_esp8266:
         cg.add_library('ESP8266HTTPClient', None)
